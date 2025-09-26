@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Notes & Tasks - Allo</title>
+  <link rel="icon" href="/Full Website Test/Landing page/resources/color logo.png">
+  <link rel="stylesheet" href="/Full Website Test/Dashboard/styles.css">
+  <link rel="stylesheet" href="notes.css">
+</head>
+<body>
+  <div class="left-sidebar">
+    <div class="nav-header">
+      <a href="/Full Website Test/Login Form/index.html" class="logo-link">
+        <img src="/Full Website Test/Landing page/resources/color logo.png" alt="Allo Logo" class="sidebar-logo-icon">
+        <span class="logo">Allo</span>
+      </a>
+    </div>
+    <ul class="nav-items">
+      <li><a href="/Full Website Test/Login Form/index.html"><span>Dashboard</span></a></li>
+      <li><a href="/Full Website Test/Income Tracker/index.html"><span>Income & Expenses</span></a></li>
+      <li><a href="/Full Website Test/Calender/index.html"><span>Calendar</span></a></li>
+      <li><a href="/Full Website Test/Notes/notes.html"><span>Notes & Task</span></a></li>
+      <li><a href="/Full Website Test/Impulse Buy Quiz/impBuy.html"><span>Impulse Buy Quiz</span></a></li>
+      <li><a href="/Full Website Test/Login Form/login.html" class="sign-out-button"><span>Sign Out</span></a></li>
+    </ul>
+  </div>
+  <div class="main-content">
+    <header class="site-header">
+      <div class="header-content">
+        <div class="search-container">
+          <input type="text" class="search-input" placeholder="Search Notes...">
+        </div>
+      </div>
+    </header>
+    <div class="content-wrapper">
+      <h1 class="page-title">Your Purchase Notes</h1>
+      <div class="notes-section">
+        <textarea id="purchase-note-input" placeholder="Write your thoughts here..."></textarea>
+        <button id="save-note-btn" class="btn save-btn">Save Note</button>
+        <div id="save-msg" class="saved-msg">Saved!</div>
+        <div class="saved-notes" id="saved-notes">
+          <h2>Previous Notes</h2>
+          <div id="notes-list"></div>
+        </div>
+      </div>
+    </div>
+    <footer class="footer">
+      <p>© 2025 Allo. All rights reserved.</p>
+    </footer>
+  </div>
+  <script src="/Full Website Test/Dashboard/script.js"></script>
+  <script type="module" src="notes.js"></script>
+  <script src="/Full Website Test/Landing page/auth-utils.js"></script>
+</body>
+</html>

@@ -1,0 +1,111 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title> Income & Expenses - Allo</title>
+  <link rel="icon" href="/Full Website Test/Landing page/resources/color logo.png">
+  <link rel="stylesheet" href="/Full Website Test/Dashboard/styles.css">
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <header class="site-header">
+    <div class="header-content">
+      <div class="search-container">
+        <input type="text" class="search-input" placeholder="Search Transactions...">
+      </div>
+    </div>
+  </header>
+
+  <div class="left-sidebar">
+    <div class="nav-header">
+      <a href="/Full Website Test/Login Form/index.html" class="logo-link">
+        <img src="/Full Website Test/Landing page/resources/color logo.png" alt="Allo Logo" class="sidebar-logo-icon">
+        <span class="logo">Allo</span>
+      </a>
+    </div>
+
+    <ul class="nav-items">
+      <li><a href="/Full Website Test/Login Form/index.html"><span>Dashboard</span></a></li>
+      <li><a href="/Full Website Test/Income Tracker/index.html"><span>Income & Expenses</span></a></li>
+      <li><a href="/Full Website Test/Calender/index.html"><span>Calendar</span></a></li>
+      <li><a href="/Full Website Test/Notes/notes.html"><span>Notes & Task</span></a></li>
+      <li><a href="/Full Website Test/Impulse Buy Quiz/impBuy.html"><span>Impulse Buy Quiz</span></a></li>
+      <li><a href="/Full Website Test/Login Form/login.html" class="sign-out-button"><span>Sign Out</span></a></li>
+    </ul>
+  </div>
+
+  <div class="main-content">
+    <div class="content-wrapper">
+      <h1 class="page-title">Income & Expenses</h1>
+      
+      <div class="finance-summary">
+        <div>
+          <h5>Total Balance</h5>
+          <span id="balance">$0.00</span>
+        </div>
+        <div>
+          <h5>Income</h5>
+          <span id="income">$0.00</span>
+        </div>
+        <div>
+          <h5>Expense</h5>
+          <span id="expense">$0.00</span>
+        </div>
+      </div>
+
+      <div class="transactions-container">
+        <h3>Transactions</h3>
+        <ul id="transactionList" data-placeholder="No transactions."></ul>
+      </div>
+
+      <div class="add-transaction-container">
+        <h3>Add Transaction</h3>
+        <form id="transactionForm">
+          <div>
+            <label for="type">
+              <input type="checkbox" name="type" id="type" checked />
+              <div class="option" data-option="Income">
+                <span>Expense</span>
+              </div>
+            </label>
+          </div>
+          <div>
+            <label for="name">Name</label>
+            <input type="text" name="name" id="name" required />
+          </div>
+          <div>
+            <label for="amount">Amount</label>
+            <input
+              type="number"
+              name="amount"
+              value="0"
+              min="0"
+              step="any"
+              inputmode="decimal"
+              id="amount"
+              required
+              onfocus="this.select()"
+            />
+          </div>
+          <div>
+            <label for="date">Date</label>
+            <input type="date" name="date" id="date" required />
+          </div>
+          <button type="submit">Submit</button>
+        </form>
+      </div>
+    </div>
+
+  </div>
+  
+  <footer class="footer">
+    <p>© 2025 Allo. All rights reserved.</p>
+  </footer>
+  </div>
+
+  <script type="module" src="script.js"></script>
+  <script src="/Full Website Test/Landing page/auth-utils.js"></script>
+</body>
+</html>

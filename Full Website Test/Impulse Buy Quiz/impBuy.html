@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Impulse Buy Quiz - Allo</title>
+  <link rel="icon" href="/Full Website Test/Landing page/resources/color logo.png">
+  <link rel="stylesheet" href="/Full Website Test/Dashboard/styles.css">
+  <link rel="stylesheet" href="impBuy.css">
+</head>
+<body>
+  <header class="site-header">
+  </header>
+
+  <div class="left-sidebar">
+    <div class="nav-header">
+      <a href="/Full Website Test/Login Form/index.html" class="logo-link">
+        <img src="/Full Website Test/Landing page/resources/color logo.png" alt="Allo Logo" class="sidebar-logo-icon">
+        <span class="logo">Allo</span>
+      </a>
+    </div>
+    <ul class="nav-items">
+      <li><a href="/Full Website Test/Login Form/index.html"><span>Dashboard</span></a></li>
+      <li><a href="/Full Website Test/Income Tracker/index.html"><span>Income & Expenses</span></a></li>
+      <li><a href="/Full Website Test/Calender/index.html"><span>Calendar</span></a></li>
+      <li><a href="/Full Website Test/Notes/notes.html"><span>Notes & Task</span></a></li>
+      <li><a href="/Full Website Test/Impulse Buy Quiz/impBuy.html"><span>Impulse Buy Quiz</span></a></li>
+      <li><a href="/Full Website Test/Login Form/login.html" class="sign-out-button"><span>Sign Out</span></a></li>
+    </ul>
+  </div>
+
+  <div class="main-content">
+    <div class="content-wrapper">
+      <div class="frame">
+        <h1>Impulse Buy Quiz</h1>
+        <p class="intro-text">Answer 10 questions <b>honestly</b> to find out if your potential purchase is a smart buy or just an impulse. Lower scores suggest practicality, while higher scores hint at impulsive behavior. Let's see how your item stacks up!</p>
+        <p class="note-text">**You will not be able to change previous answers after clicking next.**</p>
+
+        <div class="quiz">
+          <h2 id="question">Loading question...</h2>
+          <div id="answer-buttons"></div>
+          <button id="next-btn" class="btn">Next</button>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <footer class="footer">
+    <p>© 2025 Allo. All rights reserved.</p>
+  </footer>
+
+  <script src="impBuy.js"></script>
+  <script src="/Full Website Test/Landing page/auth-utils.js"></script>
+</body>
+</html>

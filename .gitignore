@@ -41,6 +41,19 @@ build/Release
 node_modules/
 jspm_packages/
 
+
+# Build output (if any)
+dist/
+build/
+
+
+# Firebase admin keys (DO NOT upload)
+*.json
+
+# OS / Editor files
+.DS_Store
+Thumbs.db
+
 # Snowpack dependency directory (https://snowpack.dev/)
 web_modules/
 
@@ -68,6 +81,7 @@ web_modules/
 # dotenv environment variable files
 .env
 .env.*
+.env.local
 !.env.example
 
 # parcel-bundler cache (https://parceljs.org/)

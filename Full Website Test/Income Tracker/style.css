@@ -1,0 +1,513 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+
+:root {
+  --bg-color: #f3f4f0;
+  --text-color: #4b5563;
+  --main-color: #92b603;
+  --border-color: #e5e7eb;
+  --income-color: #92b603;
+  --expense-color: #e74c3c;
+}
+
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: 'Poppins', sans-serif;
+  background-color: var(--bg-color);
+  color: var(--text-color);
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+}
+
+::-webkit-scrollbar {
+  width: 5px;
+}
+::-webkit-scrollbar-track {
+  background: #f5f5f5;
+  border-radius: 50px;
+}
+::-webkit-scrollbar-thumb {
+  background: var(--main-color);
+  border-radius: 50px;
+}
+
+.site-header {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  background-color: var(--main-color);
+  color: white;
+  padding: 1rem 0;
+  box-shadow: 0 1px 3px rgba(0, 0, 0, 0.1);
+  z-index: 20;
+  height: 4rem;
+  display: flex;
+  align-items: center;
+}
+
+.header-content {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 0 2rem;
+  gap: 1rem;
+  flex-wrap: wrap;
+  width: 100%;
+}
+
+.logo-container {
+  display: flex;
+  align-items: center;
+  gap: 1rem;
+  cursor: pointer;
+}
+
+.search-container {
+  flex: 1;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  max-width: 760px;
+  margin: 0 auto;
+}
+
+.search-input {
+  width: 100%;
+  padding: 0.75rem 1rem;
+  border-radius: 0.5rem;
+  border: none;
+  font-size: 1rem;
+  transition: box-shadow 0.2s ease;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+.search-input:focus {
+  outline: none;
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.15);
+}
+
+.left-sidebar {
+  position: fixed;
+  top: 0;
+  left: 0;
+  height: 100vh;
+  width: 220px;
+  background-color: #f9faf7;
+  border-right: 1px solid var(--border-color);
+  padding-top: 4rem;
+  overflow-y: auto;
+  transition: width 0.3s ease;
+  z-index: 10;
+}
+
+.left-sidebar.collapsed {
+  width: 64px;
+}
+
+.nav-header {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 1.5rem 1rem;
+  margin-top: 0.5rem;
+  margin-bottom: 1.5rem;
+  border-bottom: 1px solid var(--border-color);
+}
+
+.sidebar-logo-icon {
+  width: 36px;
+  height: 36px;
+  margin-right: 8px;
+}
+
+.logo {
+  font-size: 1.5rem;
+  font-weight: bold;
+  color: var(--text-color);
+}
+
+.logo-link {
+  display: flex;
+  align-items: center;
+  text-decoration: none;
+  color: var(--text-color);
+}
+
+.nav-items {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+
+.nav-items li {
+  padding: 0.8rem 1.5rem;
+  font-size: 1rem;
+  font-weight: 500;
+  border-bottom: 1px solid var(--border-color);
+}
+
+.nav-items li a {
+  display: flex;
+  align-items: center;
+  color: var(--text-color);
+  text-decoration: none;
+  padding: 0.5rem;
+  border-radius: 8px;
+}
+
+.nav-items li a:hover {
+  background-color: var(--main-color);
+  color: #f8f9f2;
+}
+
+.nav-items li a.active {
+  background-color: var(--main-color);
+  color: #f8f9f2;
+}
+
+.nav-items li a span {
+  margin-left: 0.75rem;
+}
+
+.main-content {
+  margin-left: 220px;
+  margin-top: 4rem;
+  padding: 1.5rem;
+  display: flex;
+  flex-direction: column;
+  flex: 1;
+  min-height: calc(100vh - 8rem);
+}
+
+.main-content.expanded {
+  margin-left: 64px;
+}
+
+.content-wrapper {
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+  max-width: 1200px;
+  margin: 0 auto;
+  width: 100%;
+}
+
+.page-title {
+  color: var(--text-color);
+  margin-bottom: 1.5rem;
+  padding-top: 1rem;
+  font-size: 2rem;
+  font-weight: 600;
+}
+
+.finance-summary {
+  background-color: var(--main-color);
+  color: #fff;
+  padding: 2rem;
+  border-radius: 10px;
+  margin-bottom: 2rem;
+  display: flex;
+  flex-wrap: wrap;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+}
+
+.finance-summary div {
+  padding: 10px;
+  text-align: center;
+}
+
+.finance-summary div:first-child {
+  flex-basis: 100%;
+  font-size: 1.75rem;
+  font-weight: 600;
+  text-transform: uppercase;
+}
+
+.finance-summary div:nth-child(n+2) {
+  flex-basis: 50%;
+  font-size: 1.5rem;
+  font-weight: 500;
+}
+
+.finance-summary h5 {
+  font-size: 0.875rem;
+  font-weight: 600;
+  text-transform: uppercase;
+  margin-bottom: 0.5rem;
+  letter-spacing: 1px;
+}
+
+.transactions-container,
+.add-transaction-container {
+  background-color: #fff;
+  padding: 1.5rem;
+  border-radius: 10px;
+  margin-bottom: 2rem;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.08);
+}
+
+.transactions-container h3,
+.add-transaction-container h3 {
+  font-size: 1.25rem;
+  color: var(--text-color);
+  margin-bottom: 1rem;
+  border-bottom: 1px solid var(--border-color);
+  padding-bottom: 0.5rem;
+}
+
+#transactionList {
+  list-style-type: none;
+  min-height: 200px;
+  max-height: 400px;
+  overflow-y: auto;
+  border-radius: 8px;
+  padding: 0;
+}
+
+#transactionList:empty {
+  border: 2px dashed var(--border-color);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 2rem;
+  color: #777;
+  font-style: italic;
+  min-height: 200px;
+}
+
+#transactionList:empty::before {
+  content: attr(data-placeholder);
+}
+
+#transactionList li {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 1rem;
+  border-bottom: 1px solid var(--border-color);
+  transition: transform 0.2s ease, background-color 0.2s ease;
+}
+
+#transactionList li:last-child {
+  border-bottom: none;
+}
+
+#transactionList li:hover {
+  background-color: #f9f9f9;
+  transform: translateY(-2px);
+  cursor: pointer;
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.05);
+}
+
+.name {
+  flex: 1;
+}
+
+.name h4 {
+  font-size: 1rem;
+  font-weight: 600;
+  text-transform: capitalize;
+  color: var(--text-color);
+}
+
+.name p {
+  font-size: 0.8rem;
+  color: #777;
+}
+
+.amount {
+  font-weight: 600;
+  padding: 0.4rem 0.8rem;
+  border-radius: 4px;
+  min-width: 100px;
+  text-align: center;
+}
+
+.amount.income {
+  color: white;
+  background-color: var(--income-color);
+}
+
+.amount.expense {
+  color: white;
+  background-color: var(--expense-color);
+}
+
+form {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 20px;
+}
+
+form div:nth-child(-n+2) {
+  grid-column: span 2;
+}
+
+form label {
+  font-size: 0.75rem;
+  font-weight: 600;
+  text-transform: uppercase;
+  display: block;
+  margin-bottom: 0.3rem;
+  color: var(--text-color);
+}
+
+form input:not(#type),
+form button {
+  width: 100%;
+  padding: 12px;
+  border: 1px solid var(--border-color);
+  border-radius: 8px;
+  font-family: "Poppins", sans-serif;
+  font-size: 0.9rem;
+}
+
+form input:focus {
+  outline: none;
+  border-color: var(--main-color);
+  box-shadow: 0 0 0 3px rgba(146, 182, 3, 0.15);
+}
+
+form button {
+  background-color: var(--main-color);
+  color: white;
+  font-size: 0.9rem;
+  font-weight: 500;
+  text-transform: uppercase;
+  padding: 0.8rem;
+  border: none;
+  cursor: pointer;
+  transition: background-color 0.2s ease, transform 0.1s ease;
+  grid-column: span 2;
+  border-radius: 9999px;
+  margin-top: 0.5rem;
+}
+
+form button:hover {
+  background-color: #57830b;
+  transform: scale(1.05);
+}
+
+form button:active {
+  transform: scale(0.98);
+}
+
+input#type {
+  appearance: none;
+  position: absolute;
+}
+
+.option {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 10px;
+  background-color: var(--income-color);
+  border-radius: 8px;
+  position: relative;
+  transition: background-color 0.25s;
+  cursor: pointer;
+  color: #fff;
+  height: 48px;
+}
+
+.option::before {
+  content: attr(data-option);
+}
+
+.option::after {
+  content: "";
+  position: absolute;
+  top: 5px;
+  left: 0;
+  background-color: #fff;
+  height: calc(100% - 10px);
+  width: calc(50% - 10px);
+  transform: translateX(5px);
+  border-radius: inherit;
+  box-shadow: 0 2px 2px rgba(0, 0, 0, 0.1);
+  transition: left 200ms;
+}
+
+.option::before,
+.option span {
+  width: 50%;
+  text-align: center;
+  cursor: inherit;
+  z-index: 2;
+  font-weight: 500;
+}
+
+input#type:checked ~ .option::after {
+  left: 50%;
+}
+
+input#type:checked ~ .option {
+  background-color: var(--expense-color);
+}
+
+input#type:checked ~ .option span,
+input#type:not(:checked) ~ .option::before {
+  color: var(--text-color);
+}
+
+.footer {
+  text-align: center;
+  padding: 1rem 0;
+  background-color: var(--main-color);
+  color: white;
+  width: 100%;
+  height: 4rem;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin-top: auto;
+}
+
+.footer a {
+  color: white;
+  text-decoration: none;
+  margin: 0 0.5rem;
+}
+
+.footer a:hover {
+  text-decoration: underline;
+  opacity: 0.9;
+}
+
+@media screen and (max-width: 768px) {
+  .left-sidebar {
+    width: 64px;
+  }
+  
+  .left-sidebar .nav-items li a span,
+  .left-sidebar .logo {
+    display: none;
+  }
+  
+  .main-content {
+    margin-left: 64px;
+  }
+
+  .finance-summary div:nth-child(n+2) {
+    flex-basis: 100%;
+  }
+
+  form {
+    grid-template-columns: 1fr;
+  }
+
+  form div {
+    grid-column: span 1 !important;
+  }
+
+  form button {
+    grid-column: span 1;
+  }
+}

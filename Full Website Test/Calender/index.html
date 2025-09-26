@@ -1,0 +1,119 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <link rel="stylesheet" href="/Full Website Test/Dashboard/styles.css" />
+  <link rel="stylesheet" href="styles.css" />
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.0/css/all.min.css" integrity="sha512-xh6O/CkQoPOWDdYTDqeRdPCVd1SpvCA9XXcUnZS2FmJNp1coAFzvtCN9BmamE+4aHK8yyUHUSCcJHgXloTyT2A==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+  <title> Calendar - Allo</title>
+  <link rel="icon" href="/Full Website Test/Landing page/resources/color logo.png">
+</head>
+<body>
+  <header class="site-header">
+    <div class="header-content">
+      <div class="search-container">
+        <input type="text" class="search-input" placeholder="Search Events...">
+      </div>
+    </div>
+  </header>
+
+  <div class="left-sidebar">
+    <div class="nav-header">
+      <a href="#" class="logo-link">
+        <img src="/Full Website Test/Landing page/resources/color logo.png" alt="Allo Logo" class="sidebar-logo-icon">
+        <span class="logo">Allo</span>
+      </a>
+    </div>
+
+    <ul class="nav-items">
+      <li><a href="/Full Website Test/Login Form/index.html"><span>Dashboard</span></a></li>
+      <li><a href="/Full Website Test/Income Tracker/index.html"><span>Income & Expenses</span></a></li>
+      <li><a href="/Full Website Test/Calender/index.html"><span>Calendar</span></a></li>
+      <li><a href="/Full Website Test/Notes/notes.html"><span>Notes & Task</span></a></li>
+      <li><a href="/Full Website Test/Impulse Buy Quiz/impBuy.html"><span>Impulsive Buy Quiz</span></a></li>
+      <li><a href="/Full Website Test/Login Form/index.html" class="sign-out-button"><span>Sign Out</span></a></li>
+    </ul>
+  </div>
+
+  <div class="main-content">
+    <div class="content-wrapper">
+      <h1 class="page-title">Your Calendar</h1>
+      
+      <div class="calendar-container">
+        <div class="left">
+          <div class="calendar">
+            <div class="month">
+              <i class="fas fa-angle-left prev"></i>
+              <div class="date">January 2025</div>
+              <i class="fas fa-angle-right next"></i>
+            </div>
+            
+            <div class="weekdays">
+              <div>Sun</div>
+              <div>Mon</div>
+              <div>Tue</div>
+              <div>Wed</div>
+              <div>Thu</div>
+              <div>Fri</div>
+              <div>Sat</div>
+            </div>
+            
+            <div class="days"></div>
+            
+            <div class="goto-today">
+              <div class="goto">
+                <input type="text" placeholder="mm/yyyy" class="date-input" />
+                <button class="goto-btn">Go</button>
+              </div>
+              <button class="today-btn">Today</button>
+            </div>
+          </div>
+        </div>
+        
+        <div class="right">
+          <div class="today-date">
+            <div class="event-day">wed</div>
+            <div class="event-date">1st January 2025</div>
+          </div>
+          
+          <div class="events"></div>
+        </div>
+      </div>
+      
+      <button class="add-event">
+        <i class="fas fa-plus"></i>
+      </button>
+      
+      <div class="add-event-wrapper">
+        <div class="add-event-header">
+          <div class="title">Add Event</div>
+          <i class="fas fa-times close"></i>
+        </div>
+        <div class="add-event-body">
+          <div class="add-event-input">
+            <input type="text" placeholder="Event Name" class="event-name" />
+          </div>
+          <div class="add-event-input">
+            <input type="text" placeholder="Event Time From (00:00)" class="event-time-from" />
+          </div>
+          <div class="add-event-input">
+            <input type="text" placeholder="Event Time To (00:00)" class="event-time-to" />
+          </div>
+        </div>
+        <div class="add-event-footer">
+          <button class="add-event-btn">Add Event</button>
+        </div>
+      </div>
+    </div>
+    
+    <footer class="footer">
+      <p>© 2025 Allo. All rights reserved.</p>
+    </footer>
+  </div>
+
+  <script type= "module" src="script.js"></script>
+  <script src="/Full Website Test/Landing page/auth-utils.js"></script>
+</body>
+</html>
