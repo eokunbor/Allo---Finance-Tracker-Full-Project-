@@ -8,17 +8,17 @@
 
 <img src="https://i.imgur.com/zL3U9eo.png" alt="project-screenshot" width="400" height="200/">
 
-<img src="https://i.imgur.com/Oy7wWwT.png" alt="project-screenshot" width="400" height="400/">
+<img src="https://i.imgur.com/Oy7wWwT.png" alt="project-screenshot" width="400" height="200/">
 
-<img src="https://i.imgur.com/uvOk7go.png" alt="project-screenshot" width="400" height="400/">
+<img src="https://i.imgur.com/uvOk7go.png" alt="project-screenshot" width="400" height="200/">
 
-<img src="https://i.imgur.com/CfheiAp.png" alt="project-screenshot" width="400" height="400/">
+<img src="https://i.imgur.com/CfheiAp.png" alt="project-screenshot" width="400" height="200/">
 
-<img src="https://i.imgur.com/7eGcCm7.pnghttps://i.imgur.com/7eGcCm7.png" alt="project-screenshot" width="400" height="400/">
+<img src="https://i.imgur.com/7eGcCm7.pnghttps://i.imgur.com/7eGcCm7.png" alt="project-screenshot" width="400" height="200/">
 
-<img src="https://i.imgur.com/fBIiREG.png" alt="project-screenshot" width="400" height="400/">
+<img src="https://i.imgur.com/fBIiREG.png" alt="project-screenshot" width="400" height="200/">
 
-<img src="https://i.imgur.com/iZ3qGw4.png" alt="project-screenshot" width="400" height="400/">
+<img src="https://i.imgur.com/iZ3qGw4.png" alt="project-screenshot" width="400" height="200/">
 
   
   
