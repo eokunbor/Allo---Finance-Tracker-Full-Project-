@@ -6,25 +6,25 @@
 
 <h2>Project Screenshots:</h2>
 
-Landing Page
+Landing Page <br>
 <img src="https://i.imgur.com/zL3U9eo.png" alt="project-screenshot" width="400" height="200/">
 
-Login/Sign Up
+Login/Sign Up<br>
 <img src="https://i.imgur.com/Oy7wWwT.png" alt="project-screenshot" width="400" height="200/">
 
-Dashboard
+Dashboard<br>
 <img src="https://i.imgur.com/uvOk7go.png" alt="project-screenshot" width="400" height="200/">
 
-Income & Expense Tracker
+Income & Expense Tracker<br>
 <img src="https://i.imgur.com/CfheiAp.png" alt="project-screenshot" width="400" height="200/">
 
-Calendar
+Calendar<br>
 <img src="https://i.imgur.com/7eGcCm7.pnghttps://i.imgur.com/7eGcCm7.png" alt="project-screenshot" width="400" height="200/">
 
-Notes
+Notes<br>
 <img src="https://i.imgur.com/fBIiREG.png" alt="project-screenshot" width="400" height="200/">
 
-Impulse Buy Quiz
+Impulse Buy Quiz<br>
 <img src="https://i.imgur.com/iZ3qGw4.png" alt="project-screenshot" width="400" height="200/">
 
   
