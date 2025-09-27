@@ -4,6 +4,10 @@
 
 <p id="description">Allo is a personal finance tracker app that helps users stay organized with a built-in calendar notes page and income/spending tracker. It features Google Firestore login for secure user accounts a dedicated login page and even an impulse quiz to encourage mindful money habits.</p>
 
+<h2>🚀 Demo</h2>
+
+[https://youtu.be/JPNOSzLie9Q?si=qzOYD3MkbjiQEQWp](https://youtu.be/JPNOSzLie9Q?si=qzOYD3MkbjiQEQWp)
+
 <h2>Project Screenshots:</h2>
 
 Landing Page <br>
